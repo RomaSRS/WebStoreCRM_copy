@@ -1,0 +1,37 @@
+@import '../../styles/constants';
+
+.actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    &__btn {
+        margin-right: 12px;
+        padding: 12px 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+        color: $white;
+        background-color: $dark;
+        border: 2px solid $dark;
+        opacity: 0.9;
+        transition: all 0.2s linear;
+        &:focus,
+        &:hover {
+            background-color: $grey;
+            border-color: $grey;
+            color: $dark;
+        }
+    }
+    &__item {
+        margin-right: 12px;
+        cursor: pointer;
+
+        &:focus .actions__icon,
+        &:hover .actions__icon{
+            fill:$dark;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import '../../styles/constants';
+
+.wrap {
+    background-color: $gr-white;
+}
+.cookies {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    color: $dark;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+     }
+}
+.link {
+    opacity: 0.6;
+    color: $dark;
+    &:focus,
+    &:hover {
+        opacity: 1;
+        color:$dark,
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 5px;
+        margin: 0 6px;
+        background: url('./arrow-icon.svg') center no-repeat;
+    }
+    &:first-child::before {
+        display: none;
+    }
+    &:last-child {
+        opacity: 1;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+    background-color: transparent;
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+     }
+    &:focus,
+    &:hover {
+        opacity: 1;
+    }
+    &:focus &__icon,
+    &:hover &__icon {
+        opacity: 1;
+    }
+    &__icon {
+        margin-right: 10px;
+    }
+}

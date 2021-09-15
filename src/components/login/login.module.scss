@@ -1,0 +1,177 @@
+@import '../../styles/constants';
+
+.error {
+    margin-top: 10px;
+    color: $error;
+}
+
+.spacebetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.module {
+    max-width: 388px;
+    margin: 50px auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $dark;
+
+
+    &__header {
+        padding: 13px 24px;
+
+        background-color: $dark;
+
+        & h2 {
+            margin: 0;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        & button {
+            display: flex;
+            background-color: transparent;
+
+            &:focus, 
+            &:hover {
+                opacity: 0.8;
+            }
+
+            & img {
+                width: 12px;
+                height: 12px;
+                @media screen and (min-width: 768px) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    &__container {
+        position: relative;
+        min-height: 672px;
+        padding: 24px 30px;
+
+        & p {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__footer {
+        margin-top: 115px;
+        text-align: center;
+        
+        & p {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+   
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    & input {
+        padding: 15px;
+        background-color: $gr-white;
+    }
+}
+
+.label {
+    margin-bottom: 8px;
+    & a {
+        color: $dark;
+    }
+}
+    
+
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: all .2s ease;
+
+    &:focus ,
+    &:hover {
+        border-color: $grey;
+        background-color: $grey;
+        color: $dark;
+    }
+
+    & span {
+        opacity: 0.9;
+    }
+    
+    &_submit {
+        margin-bottom: 32px;
+        color: $white;
+        border: 2px solid $dark;
+        background-color: $dark;
+
+        &:disabled {
+            background-color: $grey;
+        }
+    }
+
+    &_create {
+        color: $dark;
+        border: 2px solid $gr-white;
+        background-color: $gr-white;
+    }
+}
+
+.line {
+    display: flex;
+
+    &__through {
+    position: relative;
+    top:11px;
+    width: 100%;
+    border-top: 2px solid $grey;
+    }
+
+    &_left {
+        margin-right: 16px;
+    }
+    &_right {
+        margin-left: 16px;
+    }
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+
+    &__btn {
+        margin-right: 30px;
+        background-color: transparent;
+        opacity: 0.5;
+        transition: all 0.2s ease;
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:focus,
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+

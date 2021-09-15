@@ -1,0 +1,98 @@
+@import '../../../styles/constants';
+
+.flex_alin_center {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: none;
+    margin: 20px 0;
+    @media screen and (max-width: 500px) {
+        display: block;
+    }
+
+    &__icon {
+        fill: $white;
+    }
+}
+
+.topBar {
+    background-color: $dark;
+
+    &__inner {
+        justify-content: space-between;
+        padding: 6px 0;
+
+        @media screen and (max-width: 1023px) {
+            padding: 10px 0;
+            flex-direction: column;
+        }
+      
+    }
+}
+
+.contacts {
+    display: flex;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 12px;
+    color: $white;
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+
+
+    &__item {
+        margin-right: 25px;
+        opacity: 0.8;
+    }
+
+    &__icon {
+        width: 10px;
+        margin-right: 10px;
+        fill: $white;
+    }
+
+    & a {
+        color: inherit;
+        
+        &:focus,
+        &:hover {
+            color: $white;
+            opacity: 1;
+        }
+    }
+}
+
+.social {
+   
+    &__link {
+        opacity: 0.8;
+        margin-left: 12px;
+        @media screen and (max-width: 1023px) {
+            margin-left: 30px;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:focus,
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        width: 12px;
+        fill: $white;
+        @media screen and (max-width: 1023px) {
+            width: 18px;
+        }
+    }
+
+}

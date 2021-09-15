@@ -1,0 +1,102 @@
+@import '../../styles/constants';
+
+.shoppingCartItem {
+    height: 104px;
+    margin-bottom: 26px;
+    position: relative;
+    display: flex;
+    line-height: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: -14px;
+        background-color: $grey;
+    }
+}
+
+.cartImg {
+    width: 83px;
+    height: 104px;
+    margin-right: 16px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.pridumat {
+    height: 32px;
+    width: 81px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $gr-white;
+    margin-right: 16px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    opacity: 60%;
+
+    &:hover, &:focus {
+        opacity: 100%;
+    }
+
+    &Minus {
+        height: 12px;
+        width: 12px;
+    }
+
+    &Plus {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+.price {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btnTrash {
+    position: absolute;
+    right: 0;
+}
+
+.itemName {
+    opacity: 60%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.itemInfo {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.kolichestvo {
+    font-size: 14px;
+    line-height: 22px;
+}

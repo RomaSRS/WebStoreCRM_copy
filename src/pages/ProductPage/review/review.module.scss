@@ -1,0 +1,27 @@
+.review {
+    margin-bottom: 48px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        & h4 {
+            font-weight: 500;
+        }
+        & span {
+            opacity: 0.4;
+        }
+    }
+    &__rate {
+        font-size: 12px !important;
+        margin-left: 10px;
+    }
+    &__text {
+        opacity: 0.8;
+    }
+}

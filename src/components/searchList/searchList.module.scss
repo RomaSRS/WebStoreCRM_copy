@@ -1,0 +1,52 @@
+@import '../../styles/constants';
+
+.list {
+    max-height: 435px;
+    overflow-y: scroll;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+        max-height: 60vh;
+    }
+    @media screen and (min-width: 1024px) {
+        max-height: 70vh;
+    }
+
+    &::-webkit-scrollbar{
+        width: 3px;
+        background-color: $grey;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #8D8B8B;
+    }
+}
+
+.item {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 24px;
+    color:$dark;
+
+    &__image {
+        & img {
+            width: 72px;
+            height: 90px;
+            object-fit: contain;
+
+            @media screen and (min-width: 768px) {
+                width: 100px;
+                height: 120px;
+            }
+        }
+    }
+    &__info {
+        margin-left: 16px;
+    }
+    &__name {
+        opacity: 0.6;
+    }
+    &__price {
+        font-weight: 700;
+    }
+}

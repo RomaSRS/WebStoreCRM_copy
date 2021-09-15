@@ -1,0 +1,114 @@
+$grey: #E5E5E5;
+$dark: #121212;
+
+.blogArticle {
+    height: 348px;
+    width: 350px;
+    overflow: hidden;
+    line-height: 1px;
+
+    & img {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 1139px) {
+        width: 300px;
+        height: 310px;
+
+        &:nth-child(1) {
+            margin-right: 60px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &:nth-child(1) {
+            margin: 0 0 30px 0;
+        }
+
+        height: 270px;
+        width: auto;
+        max-width: 260px;
+        min-width: none;
+        margin-bottom: 30px;
+    }
+
+    &:hover, &:focus-within {
+
+        & .info {
+            transform: translateY(-84px);
+
+            & .more {
+                visibility: visible;
+            }
+        }
+
+        & .panel {
+            opacity: 100%;
+        }
+
+    }
+}
+
+.info {
+    width: 302px;
+    height: 144px;
+    padding: 24px 16px;
+    padding-bottom: none;
+    background-color: #fff;
+    margin: 0 auto;
+    transform: translateY(-47px);
+    transition: transform .3s;
+
+    @media screen and (max-width: 1139px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 12px 6px;
+    }
+
+    &Title {
+        text-transform: uppercase;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        line-height: 20px;
+    }
+
+    &Text {
+        opacity: 80%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.panel {
+    display: flex;
+    width: calc(100% - 32px);
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    transition: opacity .3s;
+    line-height: 12px;
+
+    @media screen and (max-width: 767px) {
+        opacity: 0%;
+    }
+}
+
+.more {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: none;
+    transition: visibility .0s .1s;
+    visibility: hidden;
+
+    &:hover, &:focus {
+        border-bottom: 1px solid $dark;
+        margin-bottom: -1px;
+    }
+}

@@ -1,0 +1,38 @@
+@import '../../styles/constants';
+
+
+
+.nav {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.select {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+    @media screen and (max-width: 375px) {
+        margin-left: auto;
+    }
+}
+.item {
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    color: $dark;
+    opacity: 0.6;
+    background-color: transparent;
+    transition: opacity .2s linear;
+    &:focus,
+    &:hover {
+        opacity: 1;
+    }
+}
+.selected {
+    opacity: 1;
+}
+

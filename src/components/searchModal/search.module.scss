@@ -1,0 +1,19 @@
+@import '../../styles/constants';
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $dark;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: $grey;
+    margin-bottom: 24px;
+}
+

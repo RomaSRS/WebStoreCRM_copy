@@ -1,0 +1,53 @@
+@import '../../styles/constants';
+
+.ShoppingCartPage {
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.totalWrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+
+.totalText {
+    margin-right: 30px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.totalPrice {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.itemList {
+    margin: 32px 0;
+}
+
+.btn {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .3s;
+
+    &Dark {
+        background-color: $dark;
+        color: $white;
+
+        &:hover, &:focus {
+            opacity: 80%;
+        }
+    }
+}

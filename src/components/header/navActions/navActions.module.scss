@@ -1,0 +1,46 @@
+@import '../../../styles/constants';
+
+.actions {
+    display: flex;
+    align-items: center;
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        background: transparent;
+        transition: all 0.1s linear;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:focus-within,
+        &:hover {
+            opacity: 0.5;
+        }
+        
+        & img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.amount {
+    position: relative;
+    top: -6px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 18px;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 18px;
+    color: $white;
+    background-color: $dark;
+    border: 2px solid $white;
+    border-radius: 9px;
+}

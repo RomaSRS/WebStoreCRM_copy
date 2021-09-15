@@ -1,0 +1,57 @@
+@import '../../styles/constants';
+
+.modal {
+    max-width: 100vw;
+    min-height: 720px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    // transform: translateX(100vw);
+    transition: transform 0.2s ease;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13px 24px;
+
+        background-color: $dark;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__btn {
+        display: flex;
+        background-color: transparent;
+        opacity: 0.8;
+
+        &:focus, 
+        &:hover {
+            opacity: 1;
+        }
+
+        & img {
+            width: 12px;
+            height: 12px;
+        }
+    }
+    &__container {
+        padding: 24px;
+    }
+
+}
+
+// .show {
+//     transform: translateX(0);
+// }

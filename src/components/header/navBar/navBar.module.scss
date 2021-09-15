@@ -1,0 +1,49 @@
+@import '../../../styles/constants';
+
+
+
+.flex_alin_center {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 6px 0 12px;
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+}
+
+.nav {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+.navBar {
+    position: relative;
+    background-color: $white;
+    &__inner{
+        justify-content: space-between;
+        @media screen and (max-width: 1023px) {
+            margin-left: 36px;
+            padding: 15px 0;
+        }
+        
+    }
+}
+
+.navMenu{
+    margin: 0;
+    
+}
+
+.menu_block_links {
+    margin-right: 20px;
+
+    & h4{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+

@@ -1,0 +1,27 @@
+
+@font-face {
+	font-family: 'Spartan-VariableFont';
+	src: url('../assets/fonts/Spartan-VariableFont_wght.woff') format('woff2 supports variations'),
+		 url('../assets/fonts/Spartan-VariableFont_wght.woff') format('woff2-variations');
+	font-weight: 100 900;
+	font-stretch: 25% 151%;
+}
+
+
+body {
+  font-family: 'Spartan-VariableFont', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 34px;
+  color: #121212;
+
+  background: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import 'antd/dist/antd.css';

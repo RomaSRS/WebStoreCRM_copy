@@ -1,0 +1,17 @@
+@import '../../../styles/constants';
+
+.subMenu {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    z-index: 10;
+    border-top: 2px solid $dark;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+}
+

@@ -1,0 +1,44 @@
+@import '../../../styles/constants';
+
+
+.menu_item{ 
+    display: flex;
+    align-items: center; 
+    padding: 25px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark;
+    
+    &:focus-within .menu_link,
+    &:hover .menu_link{
+
+        color: $grey;
+    }
+}
+
+.menu_link {
+    position: relative;
+   
+    &__icon{
+        position: absolute;
+        top: 35px;
+        left: 30%;
+        content: '';
+        display: none;
+        width: 24px;
+        height: 8px;
+    }
+}
+.marker {
+    display: block;
+}
+
+
+.menu_block_links {
+    padding: 0;
+    & h4 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

@@ -1,0 +1,81 @@
+@import '../../styles/constants';
+
+.modal {
+  max-width: 388px;
+  margin: auto;
+  margin-top: 110px;
+
+  @media screen and (max-width: 1139px) {
+    margin: auto;
+    margin-top: 180px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: auto;
+    margin-top: 180px;
+    transition-duration: 3s;
+  }
+}
+
+
+.localBlock {
+  max-width: 388px;
+  height: 720px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: black;
+  background-color: white;
+  
+  &_header {
+    display: flex;
+    height: 48px;
+    padding-left: 24px;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+  }
+}
+
+.localBlock_header__text {
+  margin-top: 4px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.localBlock_header__btn {
+  width: 12px;
+  height: 12px;
+  opacity: 0.8;
+  background-color: transparent;
+  
+    &:focus, &:hover {
+      opacity: 1;
+    }
+}
+
+.localBlock_list {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+}
+
+.localBlock_list {
+  display: flex;
+  margin: 24px 0 0 24px;
+  flex-direction: column;
+}
+
+.localBlock_list__title {
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

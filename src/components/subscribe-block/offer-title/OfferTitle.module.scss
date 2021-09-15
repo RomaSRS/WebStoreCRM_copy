@@ -1,0 +1,35 @@
+@import '../../../styles/constants';
+
+.header {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 320px;
+  max-width: 340px;
+}
+
+.title {
+  font-size: 12px;
+  line-height: 13px;
+  color: $dark;
+  opacity: 0.4;
+  margin: 0 auto 16px auto;
+}
+
+.subtitle {
+  font-size: 26px;
+  line-height: 36px;
+  color: $dark;
+}
+
+.textColor {
+  color: $sale;
+}
+
+.offerText {
+  font-size: 26px;
+  line-height: 36px;
+  margin: 0 0 16px 0;
+  color: $dark;
+}

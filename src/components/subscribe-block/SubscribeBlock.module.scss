@@ -1,0 +1,41 @@
+@import '../../styles/constants';
+
+.subscribeBlock {
+  color: $dark;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #f3f2f2 0%, #dcdbdb 100%);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+
+  &::before {
+    content: url('../../assets/images/subscribe_woman.png');
+    position: absolute;
+    overflow: visible;
+    top: 13px;
+    left: calc(50% - 518px);
+
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &::after {
+    top: 20px;
+    left: calc(50% + 260px);
+    content: url('../../assets/images/subscribe_man.png');
+    position: absolute;
+    overflow: visible;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
+}

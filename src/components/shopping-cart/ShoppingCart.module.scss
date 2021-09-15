@@ -1,0 +1,109 @@
+@import '../../styles/constants';
+
+.shoppingCart {
+    max-width: 388px;
+    height: 720px;
+
+    &Actions {
+        margin-top: 24px;
+
+        & .container {
+            display: flex;
+            height: 108px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+.container {
+    padding: 0 24px;
+}
+
+.title {
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header {
+    & .container {
+        background-color: $dark;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.closeModalBtn {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    background: none;
+
+    & img {
+        opacity: 60%;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
+
+.cartList {
+    margin-top: 12px;
+    height: 480px;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+        width: 0px;               /* width of the entire scrollbar */
+    }
+}
+
+.totalWrapper {
+    & .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.totalText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.totalPrice {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100%;
+    height: 48px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .3s;
+
+    &Dark {
+        background-color: $dark;
+        color: $white;
+
+        &:hover, &:focus {
+            opacity: 80%;
+        }
+    }
+
+    &White {
+        background-color: $gr-white;
+        color: $dark;
+
+        &:hover, &:focus {
+            background-color: $grey;
+        }
+    }
+}
